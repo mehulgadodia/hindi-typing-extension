@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Hindi Type</title><link rel="stylesheet" href="popup.css"></head>
+<body><header><div class="mark" lang="hi">अ</div><div><h1>Hindi Type</h1><p>English in. हिन्दी out.</p></div></header>
+<div id="target" class="target">Finding your text cursor…</div>
+<label for="english">ENGLISH</label><textarea id="english" placeholder="I will call you tomorrow morning." maxlength="5000" rows="3"></textarea>
+<button id="translate" class="secondary">Translate to Hindi</button>
+<div class="labelrow"><label for="hindi">HINDI PREVIEW</label><span>Review & edit before inserting</span></div>
+<textarea id="hindi" lang="hi" placeholder="हिन्दी अनुवाद यहाँ दिखेगा।" rows="3"></textarea>
+<div class="actions"><button id="copy" class="secondary" disabled>Copy Hindi</button><button id="insert" disabled>Type it ↗</button></div>
+<p id="status" role="status" aria-live="polite">Write English, then translate.</p>
+<footer>Only text you translate is sent to Google. No API key.<br>Online machine translation can make mistakes.</footer>
+<script src="popup.js"></script></body></html>
